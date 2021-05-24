@@ -30,5 +30,18 @@ namespace Backend.Controllers
             }
             return null;
         }
+        
+        [HttpGet("{userId:long}")]
+        public async Task<IEnumerable<Album>> getAlbumsByUser(long userId)
+        {
+            HttpClient client = new HttpClient(); 
+            HttpResponseMessage response = await client.GetAsync(new Uri(url + "?userId=" + userId));
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadAsAsync<IEnumerable<Album>>();
+
+            }
+            return null;
+        }
     }
 }

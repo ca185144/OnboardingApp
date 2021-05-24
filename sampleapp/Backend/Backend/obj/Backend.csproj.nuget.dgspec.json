@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CA185144\\sampleapp\\Backend\\Backend\\Backend.csproj": {}
+    "C:\\Users\\CA185144\\OnboardingApp\\sampleapp\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CA185144\\sampleapp\\Backend\\Backend\\Backend.csproj": {
+    "C:\\Users\\CA185144\\OnboardingApp\\sampleapp\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CA185144\\sampleapp\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\CA185144\\OnboardingApp\\sampleapp\\Backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\CA185144\\sampleapp\\Backend\\Backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\CA185144\\OnboardingApp\\sampleapp\\Backend\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\CA185144\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CA185144\\sampleapp\\Backend\\Backend\\obj\\",
+        "outputPath": "C:\\Users\\CA185144\\OnboardingApp\\sampleapp\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CA185144\\AppData\\Roaming\\NuGet\\NuGet.Config"
