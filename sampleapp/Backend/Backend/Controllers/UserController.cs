@@ -18,10 +18,11 @@ namespace Backend.Controllers
     public class UserController : Controller
     {
         private const string url = "https://jsonplaceholder.typicode.com/users";
+        readonly HttpClient client = new HttpClient();
+
         [HttpGet]
         public async Task<IEnumerable<User>> GetUsers()
         {
-            HttpClient client = new HttpClient(); 
             HttpResponseMessage response = await client.GetAsync(new Uri(url));
             if (response.IsSuccessStatusCode)
             {

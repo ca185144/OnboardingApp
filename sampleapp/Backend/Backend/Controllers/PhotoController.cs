@@ -17,11 +17,11 @@ namespace Backend.Controllers
     [Route("api/[controller]")]
     public class PhotoController : Controller
     {
+        readonly HttpClient client = new HttpClient();
         private const string url = "https://jsonplaceholder.typicode.com/photos";
         [HttpGet]
         public async Task<IEnumerable<Photo>> GetPhotos()
         {
-            HttpClient client = new HttpClient(); 
             HttpResponseMessage response = await client.GetAsync(new Uri(url));
             if (response.IsSuccessStatusCode)
             {
@@ -34,7 +34,6 @@ namespace Backend.Controllers
         [HttpGet("{albumId:long}/all")]
         public async Task<IEnumerable<Photo>> GetPhotosByAlbum(long albumId)
         {
-            HttpClient client = new HttpClient(); 
             HttpResponseMessage response = await client.GetAsync(new Uri(url + "?albumId=" + albumId));
             if (response.IsSuccessStatusCode)
             {
@@ -47,7 +46,6 @@ namespace Backend.Controllers
         [HttpGet("{albumId:long}")]
         public async Task<IEnumerable<Photo>> GetFirstPhotoByAlbum(long albumId)
         {
-            HttpClient client = new HttpClient(); 
             HttpResponseMessage response = await client.GetAsync(new Uri(url + "?albumId=" + albumId + "&_limit=1"));
             if (response.IsSuccessStatusCode)
             {
